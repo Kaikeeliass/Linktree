@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaike Elias • Links</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        :root {
+            --cor-primaria: #009FE3;
+            --cor-secundaria: #FDB913;
+            --cor-bg-claro: #b5d0f9;
+            --cor-bg-escuro: #1b1b62;
+        }
+
+        body {
+            background: var(--cor-bg-claro);
+            font-family: "Poppins", sans-serif;
+            transition: .4s;
+        }
+
+        [data-bs-theme="dark"] body {
+            background: var(--cor-bg-escuro);
+            color: #fff;
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .main-box {
+            width: 100%;
+            max-width: 480px;
+            margin: auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* LOGOS */
+        .logo img {
+            max-width: 150px;
+            margin: 0 8px;
+        }
+
+        /* FOTO */
+        .foto {
+            margin: 20px auto 10px;
+            width: 160px;
+            height: 160px;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 3px solid var(--cor-primaria);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, .2);
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .links-box {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            margin-top: 15px;
+        }
+
+        .link-btn {
+            width: 100%;
+            max-width: 380px;
+            padding: 15px 20px;
+            border-radius: 14px;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #fff !important;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none !important;
+            transition: .25s ease;
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, .15);
+        }
+
+        .link-btn:hover {
+            transform: scale(1.03);
+            opacity: .95;
+        }
+
+        .zap {
+            background: #25D366;
+        }
+
+        .insta {
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+        }
+
+        .linke {
+            background: #0077b5;
+        }
+
+        .git {
+            background: #24292f;
+        }
+
+        /* BOTÃO TEMA */
+        .theme-btn {
+            margin-top: 20px;
+            padding: 12px 35px;
+            border-radius: 40px;
+            border: 2px solid var(--cor-secundaria);
+            background: transparent;
+            font-weight: 600;
+            transition: .3s;
+        }
+
+        .theme-btn:hover {
+            background: var(--cor-secundaria);
+            transform: scale(1.05);
+            color: #000;
+        }
+
+        /* ANIMAÇÃO */
+        .fade {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: .75s ease;
+        }
+
+        .fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* MOBILE */
+        @media (max-width: 480px) {
+            .main-box {
+                padding: 15px;
+            }
+
+            .link-btn {
+                max-width: 100%;
+            }
+        }
+
+        /* FUNDO ANIMADO - MATRIX TECNOLÓGICO */
+        .tech-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        #matrixCanvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            opacity: 0.22;
+        }
+
+        /* Glow azul (estilo Galera Tech) */
+        [data-bs-theme="light"] #matrixCanvas {
+            filter: drop-shadow(0px 0px 6px #181e21);
+        }
+
+        [data-bs-theme="dark"] #matrixCanvas {
+            opacity: 0.35;
+            filter: drop-shadow(0px 0px 8px #00d9ff);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tech-background">
+        <canvas id="matrixCanvas"></canvas>
+    </div>
+
+    <div class="main-box">
+
+        <!-- LOGOS -->
+        <div class="logo fade">
+            <img src="https://lirp.cdn-website.com/a2a6fc2a/dms3rep/multi/opt/logo-galera-tech-b568ddbe-640w.png">
+            <img src="https://lirp.cdn-website.com/a2a6fc2a/dms3rep/multi/opt/APETI+LOGO+CINZA-VERMELHA+CPL-1920w.png">
+        </div>
+
+        <h2 class="fw-bold mt-3 fade">Kaike Elias</h2>
+        <p class="text-muted fade">Desenvolvedor • Tech • Inovação</p>
+
+        <div class="foto fade">
+            <img src="https://drive.google.com/drive/my-drive">
+        </div>
+
+        <!-- BOTÕES 100% ALINHADOS -->
+        <div class="links-box">
+
+            <a class="link-btn zap fade" href="https://wa.me/5517981568889?text=Ol%C3%A1%2C%20Kaike!%20Vim%20pela%20sua%20LP%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20projetos%20e%20trabalhos%20em%20tecnologia.
+">
+                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+
+            <a class="link-btn insta fade" href="https://www.instagram.com/kaikeeliass/">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </a>
+
+            <a class="link-btn linke fade" href="https://br.linkedin.com/in/kaike-elias-158664314">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+
+            <a class="link-btn git fade" href="https://github.com/Kaikeeliass">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+
+        </div>
+
+        <button class="theme-btn fade" id="themeToggle">
+            <i class="fa-solid fa-moon"></i> Alternar Tema
+        </button>
+
+        <footer class="fade" style="margin-top:25px; font-size:0.9rem; opacity:.7;">
+            2025 • Kaike Elias • Galera Tech
+        </footer>
+    </div>
+
+    <script>
+        /* ANIMAÇÃO */
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelectorAll(".fade").forEach((el, i) => {
+                setTimeout(() => {
+                    el.classList.add("visible");
+                }, 150 * i);
+            });
+        });
+
+        /* TEMA */
+        document.getElementById("themeToggle").addEventListener("click", () => {
+            const html = document.documentElement;
+            html.setAttribute(
+                "data-bs-theme",
+                html.getAttribute("data-bs-theme") === "light" ? "dark" : "light"
+            );
+        });
+
+
+    </script>
+    <script>
+        const canvas = document.getElementById("matrixCanvas");
+        const ctx = canvas.getContext("2d");
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener("resize", resizeCanvas);
+
+        const chars = "01{}[]<>/*+=-.:()#$%&?";
+        const fontSize = 16;
+        const columns = Math.floor(canvas.width / fontSize);
+        const drops = Array(columns).fill(1);
+
+        function drawMatrix() {
+            const html = document.documentElement;
+            const theme = html.getAttribute("data-bs-theme");
+
+            // Cores do tema claro/escuro
+            const color = theme === "dark" ? "#00eaff" : "#111c23";
+
+            // Fundo levemente transparente
+            ctx.fillStyle = theme === "dark"
+                ? "rgba(0,0,0,0.07)"
+                : "rgba(255,255,255,0.07)";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            ctx.fillStyle = color;
+            ctx.font = fontSize + "px monospace";
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = chars[Math.floor(Math.random() * chars.length)];
+                ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > canvas.height && Math.random() > 0.95) {
+                    drops[i] = 0;
+                }
+                drops[i]++;
+            }
+        }
+
+        setInterval(drawMatrix, 50);
+    </script>
+
+</body>
+
+</html>
